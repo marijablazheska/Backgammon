@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backgammon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <script src="customize.js" defer></script>
+    <script src="tutorial.js" defer></script>
+    <script src="bcgm.js" defer></script>
+<body onload="init();">
+<div id="menu">
+    <div id="play"><a href="#player1Display"><button>PLAY</button></a></div>
+    <div id="customize"><button id="opencustomize">CUSTOMIZE</button></div>
+    <div id="tutorial"><button id="opentutorial">TUTORIAL</button></div>
+</div>
+
+<div id="imagelogostart">
+    <img src="BACKGROUNDLOGO2.png" alt="BACKGAMMON">
+</div>
+
+
+<div id="tutorialModal" class="modal">
+    <div class="modal-content">
+        <span id="closeTutorialButton" class="close-button">&times;</span>
+        <iframe id="tutorialVideo" width="560" height="315" src="https://www.youtube.com/embed/xXE5AwzNQ2s?si=kwgzEYcumSVUmbmo" frameborder="0" autoplay; allowfullscreen></iframe>
+    </div>
+</div>
+
+<div id="customizationModal" class="modal">
+    <div id="modal-contentCustomize">
+        <span id="closeCustomizeButton" class="close-button">&times;</span>
+        <div class="player1">
+            <h2>PLAYER 1</h2>
+            <label for="player1name">Name: </label>
+            <input type="text" id="player1name" placeholder="Player 1">
+            <label for="pieces1color">Piece color: </label>
+            <select id="pieces1color">
+                <option value="black">Black</option>
+                <option value="#970C10">Red</option>
+                <option value="#6F5B3E">Brown</option>
+                <option value="#7F4AA4">Purple</option>
+            </select>
+        </div>
+
+        <div class="player2">
+            <h2>PLAYER 2</h2>
+            <label for="player2name">Name: </label>
+            <input type="text" id="player2name" placeholder="Player 2">
+            <label for="pieces2color">Piece color: </label>
+            <select id="pieces2color">
+                <option value="white">White</option>
+                <option value="#0E3506">Green</option>
+                <option value="#C4AE78">Beige</option>
+                <option value="#FEC437">Yellow</option>
+            </select>
+        </div>
+        <br/>
+        <button id="applycustomization">APPLY</button>
+    </div>
+</div>
+<br/> <br/>
+<!--  -->
+<div>
+    <label for="player1Display"></label>
+    <input type="text" id="player1Display" placeholder="Player 1" disabled>
+</div>
+
+<!--  -->
+<!--  -->
+    <canvas id="myCanvas">
+        Your browser does not support the canvas tag.
+    </canvas>
+<div id="forp2">
+    <label for="player2Display"></label>
+    <input type="text" id="player2Display" placeholder="Player 2" disabled>
+</div>
+    <div id="control">
+        <button id="resetButton">RESET GAME</button>
+        <button id="undoButton">UNDO MOVE</button>
+    </div>
+
+    <div id="mousePos"></div>
+    <div id="statusInfo"></div>
+<!--  -->
+</body>
+</html>

@@ -1,0 +1,369 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+body{
+    background-image: url("background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20%;
+}
+.titleimglogo{
+    display: block;
+    height: 40%;
+    width: 45%;
+    align-content: center;
+    padding-left: 28%;
+    margin-top: 25%;
+}
+.titleimg{
+    align-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+.loadingimg{
+    align-content: center;
+    display: block;
+    height: 3%;
+    width:50%;
+    margin-top: -17%;
+    padding-left: 26%;
+}
+.loadingg{
+    display:block;
+    align-content: center;
+    height: 60%;
+    width: 100%;
+}
+
+
+#menu {
+    width:40%;
+    height:80%;
+    border-left: 0px solid transparent;
+    border-top: 400px solid transparent;
+    border-radius: 50px;
+    position:relative;
+    margin-left: 23%;
+    margin-top: 23%;
+    top:5px;
+}
+
+#play {
+    position:relative;
+    bottom:280px;
+    right:240px;
+    height:80px;
+    width:450px;
+    background: #917659;
+    border-radius: 10px;
+    text-align:center;
+    background-size: 1px 300%;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+#play:hover {
+    background: #624026;
+    color:white;
+    -webkit-transform:rotate(-1deg);
+    transform:rotate(-2deg);
+}
+
+#play button {
+    position:relative;
+    top:20px;
+    right:4px;
+    border: transparent;
+    color: #dac1a3;
+    background-color: transparent;
+    font-family:shadows into light;
+    font-size:30px;
+}
+
+#customize {
+    height:80px;
+    width:450px;
+    background: #917659;
+    position:relative;
+    bottom:180px;
+    right:240px;
+    border-radius: 10px;
+    font-size:30px;
+    text-align:center;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+#customize:hover {
+    background: #624026;
+    color:white;
+    -webkit-transform:rotate(-2deg);
+    transform:rotate(-2deg);
+}
+
+#customize button {
+    position:relative;
+    top:3px;
+    right:4px;
+    border: transparent;
+    color: #dac1a3;
+    background-color: transparent;
+    height:100%;
+    width: 100%;
+    cursor:pointer;
+    font-family:shadows into light;
+    font-size:30px;
+}
+
+#tutorial {
+    height:80px;
+    width:450px;
+    position:relative;
+    background: #917659;
+    border-radius: 10px;
+    bottom:80px;
+    font-size:30px;
+    right:240px;
+    text-align:center;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+    cursor:pointer;
+
+}
+
+#tutorial:hover {
+    background: #624026;
+    color:white;
+    -webkit-transform:rotate(-2deg);
+    transform:rotate(-2deg);
+
+}
+
+#tutorial button {
+    position:relative;
+    top:0px;
+    border: transparent;
+    color: #dac1a3;
+    background-color: transparent;
+    height:100%;
+    width: 100%;
+    cursor:pointer;
+    font-family:shadows into light;
+    font-size:30px;
+}
+#imagelogostart{
+    position: absolute;
+    display: block;
+    width:20%;
+    height:40%;
+    left: 40%;
+    margin-left: 12%;
+    margin-top: -30%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: transparent;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid transparent;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: xxx-large;
+}
+.player1 h2{
+    color: #dac1a3;
+    font-family:shadows into light;
+}
+.player2 h2{
+    color: #dac1a3;
+    font-family:shadows into light;
+}
+label{
+    color: #dac1a3;
+    font-family:shadows into light;
+}
+
+#pieces1color {
+    padding: 8px;
+    border: 5px solid #917659;
+    background-color: #917659;
+    color: #dac1a3;
+    font-family:shadows into light;
+    border-radius: 10px;
+}
+
+#pieces1color option:nth-child(1){
+    background-color: black;
+    color: white;
+}
+#pieces1color option:nth-child(2){
+    background-color: #970C10;
+    color: white;
+}
+#pieces1color option:nth-child(3){
+    background-color: #6F5B3E;
+    color: white;
+}
+#pieces1color option:nth-child(4){
+    background-color: #7F4AA4;
+    color: white;
+}
+
+#pieces2color {
+    padding: 8px;
+    border: 5px solid #917659;
+    background-color: #917659;
+    color: #dac1a3;
+    font-family:shadows into light;
+    border-radius: 10px;
+}
+#pieces2color option:nth-child(1){
+    background-color: white;
+    color: black;
+}
+#pieces2color option:nth-child(2){
+    background-color: #0E3506;
+    color: white;
+}
+#pieces2color option:nth-child(3){
+    background-color: #C4AE78;
+    color: white;
+}
+#pieces2color option:nth-child(4){
+    background-color: #FEC437;
+    color: white;
+}
+
+#applycustomization{
+    padding: 8px;
+    width: 20%;
+    border: 5px solid transparent;
+    background-color: #917659;
+    color: #dac1a3;
+    font-family:shadows into light;
+    border-radius: 10px;
+    text-align:center;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+    cursor:pointer;
+}
+#applycustomization:hover{
+    background: #624026;
+    color:white;
+    -webkit-transform:rotate(-2deg);
+    transform:rotate(-2deg);
+}
+
+#modal-contentCustomize{
+    background-image: linear-gradient(#5f3d22, #6F5B3E);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+#myCanvas{
+
+    margin-left: 22%;
+    margin-right: 2%;
+}
+
+#mousePos{
+    opacity: 0.1%;
+    margin: 0;
+    padding:0;
+}
+#statusInfo{
+    opacity: 0.1%;
+    margin: 0;
+    padding:0;
+}
+
+#control{
+    display: inline-block;
+    position:relative;
+}
+
+#resetButton{
+    padding: 8px;
+    width: 45%;
+    border: 5px solid transparent;
+    background-color: #624026;
+    color: #dac1a3;
+    font-family:shadows into light;
+    border-radius: 10px;
+    text-align:center;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+#resetButton:hover{
+    background: maroon;
+    color:white;
+    -webkit-transform:rotate(-2deg);
+    transform:rotate(-2deg);
+}
+
+#undoButton{
+    padding: 8px;
+    width: 45%;
+    border: 5px solid transparent;
+    background-color: #624026;
+    color: #dac1a3;
+    font-family:shadows into light;
+    border-radius: 10px;
+    text-align:center;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+#undoButton:hover{
+    background: cornflowerblue;
+    color:white;
+    -webkit-transform:rotate(-2deg);
+    transform:rotate(-2deg);
+}
+
+#player1Display{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: large;
+    margin-left: 47%;
+    font-family:shadows into light;
+}
+#player2Display{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: large;
+    margin-left: 47%;
+    font-family:shadows into light;
+}
